@@ -210,7 +210,7 @@ module Hitbtc
     end
 
     def check_symbol symbol
-      if symbol.length != 6 || symbol.class != String
+      if symbol.class != String
         raise "You didn't enter a correct symbol, check symbols method to see list and enter symbol as a string"
       end
       symbol.upcase
